@@ -11,12 +11,12 @@ function HomePage() {
 
   return (
     <div className="HomePage-main">
-        <div className="text-btn-container">
+        <div className="text-btn-container animate__animated animate__fadeIn">
             <h1>Alex Lehnbom</h1>
-            <p>I am a web developer and ultra runner</p>
+            <p>I am a creative web developer and runner</p>
             <button onClick={goToAboutPage}><span>More About Me</span></button>
         </div>
-        <div className='img-container'>
+        <div className="img-container animate__animated animate__fadeIn">
             <img src={require('../images/pp2.jpg')} alt="profile pic" />
         </div>
     </div>

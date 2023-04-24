@@ -38,16 +38,17 @@ table {
 }
 
 //------------------------------------------------//
+
 body {
+  box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     color: var(--text-color);
     background-color: var(--bg-color);
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     overflow-y: scroll;
-  
+
     --bg-color: #262626;
     --main-color: #ff6600;
     --text-color: white;
@@ -58,14 +59,16 @@ body {
 .App {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 90em;
     min-height: 100vh;
-  }
+}
   
 
 h1 {
     font-size: 4em;
-    color: red;
+    color: var(--main-color);
 }
 
 h2 {
@@ -93,12 +96,12 @@ nav {
     a {
         text-decoration: none;
         color: var(--text-color);
-        font-size: 2em;
+        font-size: 1.5em;
         margin: 1em;
     }
 
     a:hover {
-      color: var(--main-color);
+      border-bottom: 2px solid var(--text-color);
     }
 
 }
@@ -108,7 +111,7 @@ nav {
     justify-content: center;
     align-items: center;
     width: 100%;
-    flex-grow: 1;
+    flex: 1;
   }
   
 
@@ -186,7 +189,10 @@ footer {
     border: 2px solid var(--main-color);
     background-color: var(--bg-color);
     color: var(--text-color);
-    border-radius: 15px;
+    border-radius: 7px;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 3px 3px 6px var(--main-color),
+    -3px -3px 6px var(--third-color);
 
     span {
         margin: 1em;
@@ -201,6 +207,8 @@ footer {
 
    button:active {
     transform: scale(0.96);
+    box-shadow: 2px 2px 2px var(--main-color),
+                 -2px -2px 2px var(--main-color);
    }
 
    //--------------------------------------------------------//
@@ -267,32 +275,42 @@ footer {
   .ContactPage-main {
     display: flex;
     flex-direction: row;
-    
     width: 100%;
     flex-grow: 1;
   }
 
   .ContactPage-form-container {
-    margin-top: 8em;
-    width: 50%;
+    margin-top: 4em;
+    width: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
+  .form-card {
+    width: 37.5em;
+    padding: 1em;
+    border: 2px solid var(--text-color);
+    border-radius: 15px;
+
+    h2 {
+    border-bottom: 2px solid var(--third-color);
+    padding: 0.2em 0 0.2em 0; 
+    }
+  }
+
   .ContactPage-modal-container {
-    width: 50%;
+    width: 40%;
     display: flex;
     justify-content: center;
   }
-
   .book-a-call-btn {
-    margin-top: 9em;
+    margin-top: 7em;
     width: 8em;
     height: 3em;
     font-size: 2em;
     border: 4px solid var(--main-color);
-    border-radius: 50px;
+    border-radius: 20px;
     box-shadow: 6px 6px 12px var(--main-color),
                -6px -6px 12px var(--third-color);
   }
@@ -308,7 +326,6 @@ footer {
   form {
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 100%;
     max-width: 600px;
 
@@ -316,7 +333,7 @@ footer {
       width: 6em;
       height: 2em;
       font-size: 1.4em;
-      border-radius: 30px;
+      border-radius: 10px;
     }
   }
   
@@ -329,9 +346,10 @@ footer {
     width: 100%;
     padding: 0.5em;
     margin-top: 0.5em;
-    border: 1px solid var(--main-color);
     border-radius: 4px;
     box-sizing: border-box;
+    background-color: var(--third-color);
+    color: var(--text-color);
   }
   
   .submitted-data {
@@ -341,7 +359,6 @@ footer {
     width: 40em;
     min-height: 15em;
     background-color: var(--third-color);
-    border: 2px solid var(--text-color);
     border-radius: 15px;
 
     p:first-child {
@@ -390,9 +407,245 @@ footer {
   top: 0.5em;
   right: 0.5em;
   background: none;
-  border: 2px solid var(--main-color);
-  font-size: 1.1em;
+  border: none;
+  box-shadow: none;
+  font-size: 1.5em;
   cursor: pointer;
   color: var(--text-color);
 }
 
+.Modal-close:active {
+  border: none;
+  box-shadow: none;
+}
+
+.Modal-close:hover {
+  color: var(--main-color);
+}
+
+
+
+   //--------------------------------------------------------//
+
+   .RunningPage-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-grow: 1;
+  
+   }
+
+   .RunningPage-strava {
+    width: 30%;
+    height: 35em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+
+   .StravaCard {
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 0 1em 1em 1em;
+    width: 18.6em;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h2 {
+      border-bottom: 2px solid var(--third-color);
+      padding: 0.2em 0 0.2em 0; 
+    }
+   }
+
+   .RunningPage-upcoming-events {
+    height: 25em;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+
+    h2 {
+      border-bottom: 2px solid var(--third-color);
+      padding: 0.2em 0 0.2em 0; 
+    }
+  }
+
+  .event-card {
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 0 1em 1em 1em;
+    width: 80%;
+    height: 19em;
+  }
+
+   .event-container {
+    display: flex;
+    width: 100%;
+    max-width: 70em;
+    justify-content: space-between;
+    margin-top: 1em;
+  
+    p {
+      font-size: 1.7em;
+      padding: 0.5em;
+      background-color: var(--third-color);
+      border-radius: 10px;
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--text-color);
+    }
+
+    a:hover {
+      color: var(--main-color);
+    }
+
+  }
+
+  .event-name {
+    min-width: 15em;
+  }
+    
+
+    //--------------------------------------------------------//
+
+    .ProjectsPage-main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      flex-grow: 1;
+    }
+
+    .projects-upper {
+      display: flex;
+      flex-direction: row;
+    }
+    
+    .projects-lower {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .project-container {
+      width: 16em;
+      height: 16em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin: 1em;
+
+      img {
+        width: 12em;
+        height: 12em;
+        border: 2px solid var(--main-color);
+        border-radius: 10px;
+      }
+
+      img:hover {
+        transform: scale(1.01);
+      }
+
+      p {
+        margin-top:1em;
+        font-size: 1.1em;
+      }
+
+    }
+
+    .two {
+      animation-delay: 50ms !important;
+    }
+
+    .three {
+      animation-delay: 100ms !important;
+    }
+
+    .four {
+      animation-delay: 150ms !important;
+    }
+
+    .five {
+      animation-delay: 200ms !important;
+    }
+
+    .six {
+      animation-delay: 250ms !important;
+    }
+
+    //------------------------------------------------//
+
+  .Project {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    width: 90%;
+
+    button {
+      width: 8em;
+      height: 4em;
+    }
+
+  }
+
+  .title-btns-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1em;
+
+    h2 {
+      margin: 0.3em;
+    }
+
+    button {
+      width: 5em;
+      height: 3em;
+      margin: 1em;
+      border: none;
+      box-shadow: none;
+
+      i {
+        font-size: 3em;
+      }
+
+      i:hover {
+        color: var(--main-color);
+      }
+    }
+  }
+
+  .p-img-conatiner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 3em 0 3em 0;
+
+    p {
+      width: 50%;
+      margin:  0 1em 1em 1em;
+      line-height: 1.5em;
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--main-color);
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    img {
+      width: 28em;
+      height: 28em;
+      border: 3px solid var(--main-color);
+      border-radius: 15px;
+    }
+  }
