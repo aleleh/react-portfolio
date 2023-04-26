@@ -1,9 +1,9 @@
 // imports react, link component from react router dom, stylesheet and my resume
 
-import React from 'react';
-import { Link } from 'react-router-dom';
-import '../index.css';
-import resume from '../assets/Alexander_Lehnbom_Resume.pdf';
+import React from "react";
+import { Link } from "react-router-dom";
+import "../index.css";
+import resume from "../assets/Alexander_Lehnbom_Resume.pdf";
 
 // navbar function using link copmponents that navigates to a specific route
 function NavBar() {

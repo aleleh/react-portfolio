@@ -1,15 +1,15 @@
 // imports react
-import React from 'react';
+import React from "react";
 
 // aboutpage function with text and images
 function AboutPage() {
   return (
-    <div className='AboutPage-main'>
-        <div className='AboutPage-image-text-container'>
-            <div className='AboutPage-img-container1 animate__animated animate__fadeIn'>
-                <img src={require('../images/surfing.jpg')} alt="surfing alex" />
+    <div className="AboutPage-main">
+        <div className="AboutPage-image-text-container">
+            <div className="AboutPage-img-container1 animate__animated animate__fadeIn">
+                <img src={require("../images/surfing.jpg")} alt="surfing alex" />
             </div>
-            <div className='AboutPage-text-container two animate__animated animate__fadeIn'>
+            <div className="AboutPage-text-container two animate__animated animate__fadeIn">
                 <h2>About Me</h2>
                 <p> Hi, I'm Alexander Lehnbom, a 28-year-old developer originally from Gävle, Sweden, 
                     now based in the vibrant city of Toronto, Canada. As a tech enthusiast passionate about learning, 
@@ -24,8 +24,8 @@ function AboutPage() {
                     enabling me to approach problems with an open mind and a creative outlook. </p>
             </div>
         </div>
-        <div className='AboutPage-image-text-container'>
-            <div className='AboutPage-text-container'>
+        <div className="AboutPage-image-text-container">
+            <div className="AboutPage-text-container">
                 <p> Running, on 
                     the other hand, has instilled in me the importance of discipline, perseverance, and setting achievable 
                     goals. These qualities have a direct impact on my work ethic and ability to deliver high-quality results consistently.
@@ -38,8 +38,8 @@ function AboutPage() {
                     I am confident that with my strong work ethic, dedication to learning, and adaptable nature, 
                     I can contribute significantly to the field of technology and be a valuable asset to any employer.</p>
             </div>
-            <div className='AboutPage-img-container2'>
-                <img src={require('../images/friends.jpg')} alt="friends" />
+            <div className="AboutPage-img-container2">
+                <img src={require("../images/friends.jpg")} alt="friends" />
             </div>
         </div>
     </div>

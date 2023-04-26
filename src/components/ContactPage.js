@@ -43,7 +43,7 @@ function ContactPage() {
   return (
     <div className="ContactPage-main">
       <div className="ContactPage-form-container animate__animated animate__fadeIn">
-        <div className='form-card'>
+        <div className="form-card">
           <h2>Send a Message</h2>
           <form onSubmit={handleSubmit}>
             <label htmlFor="name">Name:</label>

@@ -1,7 +1,7 @@
 // imports react, strylesheet and boxicons
-import React from 'react';
-import '../index.css';
-import 'boxicons';
+import React from "react";
+import "../index.css";
+import "boxicons";
 
 //footer function with some simple animations, links and icons
 function Footer() {

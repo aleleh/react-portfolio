@@ -1,12 +1,18 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import '../index.css';
+// Imports react, useNavigate from react router dom and my stylesheet
 
+import React from "react";
+import { useNavigate } from "react-router-dom";
+import "../index.css";
+
+// Declares component HomePage
 function HomePage() {
+  // Initializes the navigate function using the useNavigate hook. 
+  // This function is used to navigate between pages.
   const navigate = useNavigate();
-
+ // This function is called when user clicks on the "more about me" button.
+ // It navigates to the /about route
   const goToAboutPage = () => {
-    navigate('/about');
+    navigate("/about");
   };
 
   return (
