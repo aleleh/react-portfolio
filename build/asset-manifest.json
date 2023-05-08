@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "./static/css/main.de1314fd.css",
+    "main.js": "./static/js/main.cc3c8d95.js",
+    "static/js/787.a2cb61a6.chunk.js": "./static/js/787.a2cb61a6.chunk.js",
+    "static/media/friends.jpg": "./static/media/friends.cda38514d119a99ec787.jpg",
+    "static/media/boxicons.svg": "./static/media/boxicons.9e2b21b135bc7d4c803f.svg",
+    "static/media/project12.png": "./static/media/project12.80e4257a362c82ff04c4.png",
+    "static/media/boxicons.eot": "./static/media/boxicons.65a8ce52fc5427e8f94d.eot",
+    "static/media/boxicons.woff": "./static/media/boxicons.d12afc36557395143e4b.woff",
+    "static/media/boxicons.ttf": "./static/media/boxicons.db9ddb1898dbd76badca.ttf",
+    "static/media/pp2.jpg": "./static/media/pp2.82a18d920f85f869a9dc.jpg",
+    "static/media/boxicons.woff2": "./static/media/boxicons.df635aaf04cd75132f62.woff2",
+    "static/media/project10.png": "./static/media/project10.830865129ea2a308542c.png",
+    "static/media/project3.jpg": "./static/media/project3.9ef39444fc18ece74023.jpg",
+    "static/media/surfing.jpg": "./static/media/surfing.c89b0def6d4ce4ea828f.jpg",
+    "static/media/Alexander_Lehnbom_Resume.pdf": "./static/media/Alexander_Lehnbom_Resume.b0edbf418f0aa2b5bacb.pdf",
+    "static/media/project1.jpg": "./static/media/project1.b0df7903def7e9a2daae.jpg",
+    "static/media/project2.jpg": "./static/media/project2.07624bfd21353b16bd2d.jpg",
+    "index.html": "./index.html",
+    "main.de1314fd.css.map": "./static/css/main.de1314fd.css.map",
+    "main.cc3c8d95.js.map": "./static/js/main.cc3c8d95.js.map",
+    "787.a2cb61a6.chunk.js.map": "./static/js/787.a2cb61a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.de1314fd.css",
+    "static/js/main.cc3c8d95.js"
+  ]
+}
