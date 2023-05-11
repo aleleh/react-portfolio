@@ -20,7 +20,7 @@
     "web-vitals": "^2.1.4"
   },
 
-  "homepage": "https://aleleh.github.io/react-portfoli/",
+  "homepage": "https://aleleh.github.io/react-portfolio/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
