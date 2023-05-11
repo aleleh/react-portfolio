@@ -15,7 +15,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 // 'BrowserRouter' enables clint side routing and 'React.StrictMode' checks for issues in the app during development
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <App />
     </BrowserRouter>
   </React.StrictMode>
