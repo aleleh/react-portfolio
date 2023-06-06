@@ -648,4 +648,16 @@ footer {
       border: 3px solid var(--main-color);
       border-radius: 15px;
     }
+
   }
+
+  
+::selection {
+  background: var(--main-color);
+  color: var(--text-color);
+}
+
+::-moz-selection {
+  background: var(--main-color);
+  color: var(--text-color);
+}

@@ -3,7 +3,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../index.css";
-import resume from "../assets/Alexander_Lehnbom_Resume.pdf";
+import resume from "../assets/Alexander_Lehnbom_Resume_FED.pdf";
 
 // navbar function using link copmponents that navigates to a specific route
 function NavBar() {
@@ -15,7 +15,7 @@ function NavBar() {
           <li><Link to="/about">About</Link></li>
           <li><Link to="/running">Running</Link></li>
           <li><Link to="/projects">Projects</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
+          <li><a href="mailto:alexander.lehnbom@gmail.com">Contact</a></li>
           <li><a href={resume} download>Download Resume</a></li>
         </ul>
       </nav>

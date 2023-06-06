@@ -19,7 +19,7 @@ function HomePage() {
     <div className="HomePage-main">
         <div className="text-btn-container animate__animated animate__fadeIn">
             <h1>Alex Lehnbom</h1>
-            <p>I am a creative web developer and runner</p>
+            <p>Web developer and runner</p>
             <button onClick={goToAboutPage}><span>More About Me</span></button>
         </div>
         <div className="img-container animate__animated animate__fadeIn">

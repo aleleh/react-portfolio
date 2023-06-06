@@ -1,5 +1,5 @@
 // imports useState hook and XCircle icon from react icons
-
+import axios from 'axios';
 import React, { useState } from 'react';
 import { BiXCircle } from "react-icons/bi";
 
@@ -26,11 +26,26 @@ function ContactPage() {
   // e.preventDefault() prevents the default behaviour of the form such as reloading the page
   // setSubmittedData(formData) stores the current formData so it can be displayed
   // laste line is just resetting the formData to it's initial values
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setSubmittedData(formData);
-    setFormData({ name: '', email: '', message: '' });
+  
+    try {
+      // Make a POST request to your server with form data
+      const response = await axios.post('http://localhost:3000/sendmail', formData);
+  
+      if(response.status === 200){
+        setSubmittedData(formData);
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        // Handle error, e.g. show a notification or message
+        console.error("Error sending message");
+      }
+    } catch (error) {
+      // Handle error, e.g. show a notification or message
+      console.error("Error sending message: ", error);
+    }
   };
+  
 
   // Toggle modal open/closed state or 'true' or 'false'
   // Calls setIsModalOpen function then passes argument '!IsModalOpen' to  'setIsModalOpen'
